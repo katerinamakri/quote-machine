@@ -1,0 +1,38 @@
+html{
+  background-color: rgb(123, 195, 189);
+
+}
+
+.App {
+  text-align: center;
+/*  background: rgba(72,145,138,1);*/
+/*background: -moz-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(72,145,138,1)), color-stop(49%, rgba(118,188,182,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
+background: linear-gradient(135deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48918a', endColorstr='#ffffff', GradientType=1 );*/
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 15px;
+  width: 480px;
+  background: #f1eeee;
+  position: absolute;
+  left: 33%;
+  top: 35%;  
+}
+
+#author {
+/*  position: absolute;
+  top: 20%;
+  right: 10%;*/
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
