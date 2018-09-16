@@ -1,1 +1,1 @@
-# quote-maschine
+# quote-machine
