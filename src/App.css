@@ -18,7 +18,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48918a', end
 .box {
   border: 1px solid black;
   border-radius: 3px;
-  padding: 15px;
+  padding: 25px;
   width: 480px;
   background: #f1eeee;
   position: absolute;
@@ -27,12 +27,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48918a', end
 }
 
 #author {
-/*  position: absolute;
-  top: 20%;
-  right: 10%;*/
+  display: flex;
+  float: right;
+  margin: 0;
 }
 
 .buttons-container {
-  display: flex;
-  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.twitter {
+  float: left;
+}
+
+.next-quote {
+  float: right;
+  padding: 5px;
+  border-radius: 3px;
+  border: 0;
+  background-color: rgb(123, 195, 189);
+}
+
+.fa-2x{
+  color: black;
 }
