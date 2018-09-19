@@ -17,7 +17,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    window.gm_authFailure = this.gm_authFailure;
+    // window.gm_authFailure = this.gm_authFailure;
     this.fetchQuote(this.getData);    
   }
 
@@ -51,13 +51,9 @@ class App extends Component {
     .then(response => response.json()); // parses response to JSON
   }
 
-  refreshPage (fetchQuote, getData){
-    fetchQuote(getData);
-
-    console.log("the button works")   
+  newQuote (fetchQuote, getData){
+    this.fetchQuote(getData);
   }
-
-
 
   render() {
     return (
@@ -69,7 +65,7 @@ class App extends Component {
           </div>
           <div className="buttons-container">
             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet" className="twitter" id="tweet-quote"> <i className="fab fa-twitter-square fa-2x"></i> </a>        
-            <button className="next-quote" id="new-quote" onClick={this.fetchQuote}>New Quote</button>
+            <button className="next-quote" id="new-quote" onClick={() => this.newQuote(this.fetchQuote, this.getData) }>New Quote</button>
           </div>
         </div>
       </div>
