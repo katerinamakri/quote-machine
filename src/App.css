@@ -1,29 +1,22 @@
-html{
-  background-color: rgb(123, 195, 189);
-
-}
 
 .App {
   text-align: center;
-/*  background: rgba(72,145,138,1);*/
-/*background: -moz-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(72,145,138,1)), color-stop(49%, rgba(118,188,182,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
-background: linear-gradient(135deg, rgba(72,145,138,1) 0%, rgba(118,188,182,1) 49%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48918a', endColorstr='#ffffff', GradientType=1 );*/
 }
 
 .box {
-  border: 1px solid black;
-  border-radius: 3px;
+  border: 1px solid #d4d4d4;;
+  border-radius: 5px;
   padding: 25px;
   width: 480px;
   background: #f1eeee;
   position: absolute;
   left: 33%;
   top: 35%;  
+}
+
+#text {
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 #author {
@@ -42,12 +35,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48918a', end
 
 .next-quote {
   float: right;
-  padding: 5px;
-  border-radius: 3px;
+  padding: 10px;
+  border-radius: 5px;
   border: 0;
+  color:#fff;
   background-color: rgb(123, 195, 189);
 }
 
-.fa-2x{
+.fa-twitter-square{
   color: black;
+  font-size: 2.5em;
+}
+
+.fa-quote-left{
+  font-size: 2em;
 }
