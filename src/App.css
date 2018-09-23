@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+.box-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
 .box {
   border: 1px solid #d4d4d4;;
   border-radius: 5px;
@@ -20,26 +27,46 @@
 }
 
 #author {
-  display: flex;
-  float: right;
+/*  display: flex;*/
+/*  float: right;*/
+  text-align: right;
   margin: 0;
 }
 
 .buttons-container {
-  padding-top: 40px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .twitter {
-  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.next-quote-container {
+  width: 50%;
+  text-align: right;
 }
 
 .next-quote {
-  float: right;
+  /*float: right;*/
   padding: 10px;
   border-radius: 5px;
   border: 0;
   color:#fff;
   background-color: rgb(123, 195, 189);
+  cursor: pointer;
+}
+
+button:hover {
+  position: relative;
+  top: 2px;
+}
+
+a:hover {
+  position: relative;
+  top: 2px;
 }
 
 .fa-twitter-square{
