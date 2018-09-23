@@ -80,16 +80,20 @@ class App extends Component {
 
     return (
       <div className="App" >
-        <div className="box" id="quote-box">
-          <div>
-            <p id="text" style={{color:this.state.backgroundColor}} ><i className="fas fa-quote-left"></i> {this.state.quote}</p>
+        <div className="box-container">
+          <div className="box" id="quote-box">
+          <section>
+            <h2 id="text" style={{color:this.state.backgroundColor}} ><i className="fas fa-quote-left"></i> {this.state.quote}</h2>
             <p id="author" style={{color:this.state.backgroundColor}} >- {this.state.author} -</p>
-          </div>
-          <div className="buttons-container">
+          </section>
+          <section className="buttons-container">
             <a  href="https://twitter.com/intent/tweet" className="twitter" id="tweet-quote"> 
               <i className="fab fa-twitter-square fa-2x" style={{color:this.state.backgroundColor}}></i> 
-            </a>        
-            <button className="next-quote" id="new-quote" style={{backgroundColor:this.state.backgroundColor}} onClick={() => this.newQuote(this.fetchQuote, this.getData) }>New Quote</button>
+            </a>
+            <div className="next-quote-container">        
+              <button className="next-quote" id="new-quote" style={{backgroundColor:this.state.backgroundColor}} onClick={() => this.newQuote(this.fetchQuote, this.getData) }>New Quote</button>
+            </div>
+          </section>
           </div>
         </div>
       </div>
